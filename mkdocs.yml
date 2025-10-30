@@ -1,0 +1,64 @@
+site_name: Python Projects & Insights
+site_description: Python projects, examples, and learning resources
+site_url: https://wulfnb.github.io/python/
+repo_url: https://github.com/wulfnb/python
+repo_name: wulfnb/python
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+  palette:
+    - scheme: default
+      primary: teal
+      accent: blue
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: teal
+      accent: blue
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - toc:
+      permalink: true
+
+nav:
+  - Home: index.md
+  - Python Basics:
+    - Common Functions: basics/common-functions.md
+    - List Operations: basics/list-operations.md
+    - Examples: basics/examples.md
+  - Projects:
+    - Project 1: projects/project1.md
+    - Project 2: projects/project2.md
+  - Advanced Topics:
+    - Microservices: advanced/microservices.md
+  - About: about.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/wulfnb
